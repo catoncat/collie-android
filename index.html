@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collie — Android</title>
+  <meta name="theme-color" content="#070708" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #070708; color: #f3f3f4; font-family: ui-sans-serif, system-ui, sans-serif; }
+    main { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 32px 20px; }
+    .card { width: 100%; max-width: 420px; }
+    h1 { font-size: 42px; letter-spacing: -0.04em; margin: 0 0 8px; font-weight: 600; }
+    p { color: #8e8e96; line-height: 1.5; margin: 0 0 12px; }
+    .meta { font-size: 13px; color: #5c5c64; font-variant-numeric: tabular-nums; }
+    a.btn {
+      display: flex; align-items: center; justify-content: center;
+      height: 52px; margin-top: 28px; border-radius: 12px;
+      background: #d8dae0; color: #0b0b0c; font-weight: 600; text-decoration: none;
+    }
+    .hint { margin-top: 16px; font-size: 12px; color: #5c5c64; }
+    .mark {
+      width: 56px; height: 56px; border-radius: 14px; background: #18181c;
+      display: grid; place-items: center; margin-bottom: 24px; font-weight: 700; font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="mark">C</div>
+      <h1>Collie</h1>
+      <p>安卓应用。系统通知栏批准、桌面小组件、指纹锁。包名 com.collie.app，最低 Android 8。</p>
+      <p class="meta">v1.0.0 · 17 MB · debug 签名</p>
+      <a class="btn" href="/collie.apk" download="collie.apk">下载 APK</a>
+      <p class="hint">安装时打开「允许未知来源」。debug 包，仅用于安装试用。</p>
+    </div>
+  </main>
+</body>
+</html>
