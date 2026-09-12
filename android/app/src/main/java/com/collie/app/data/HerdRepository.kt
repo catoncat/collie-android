@@ -175,38 +175,38 @@ object HerdRepository {
     private val MKFIFO = Ask(
         id = "ask-mkfifo",
         kind = "permission",
-        title = "Bash command",
+        title = "Bash 命令",
         command = "mkfifo fixture-fifo",
-        detail = "Create a named pipe (FIFO). This command requires approval.",
+        detail = "创建命名管道（FIFO）。这条命令需要你批准。",
         options = listOf(
-            AskOption("yes", "Yes"),
-            AskOption("always", "Yes, and don’t ask again for mkfifo *"),
-            AskOption("no", "No", destructive = true),
+            AskOption("yes", "批准并继续"),
+            AskOption("always", "批准，并且 mkfifo * 不再问"),
+            AskOption("no", "拒绝", destructive = true),
         ),
     )
 
     private val PUSH = Ask(
         id = "ask-push",
         kind = "permission",
-        title = "Bash command",
+        title = "Bash 命令",
         command = "git push origin feat/billing --force-with-lease",
-        detail = "Rewrites the remote branch. This command requires approval.",
+        detail = "会改写远端分支。这条命令需要你批准。",
         options = listOf(
-            AskOption("yes", "Yes"),
-            AskOption("always", "Yes, don’t ask again for git push *"),
-            AskOption("no", "No", destructive = true),
+            AskOption("yes", "批准并继续"),
+            AskOption("always", "批准，并且 git push * 不再问"),
+            AskOption("no", "拒绝", destructive = true),
         ),
     )
 
     private val THEME = Ask(
         id = "ask-theme",
         kind = "question",
-        title = "Which color theme should the dashboard use?",
-        detail = "Offer exactly three options.",
+        title = "仪表盘用哪种颜色？",
+        detail = "只给三个选项。",
         options = listOf(
-            AskOption("red", "Red"),
-            AskOption("green", "Green"),
-            AskOption("blue", "Blue"),
+            AskOption("red", "红"),
+            AskOption("green", "绿"),
+            AskOption("blue", "蓝"),
         ),
     )
 
