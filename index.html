@@ -5,36 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Collie — Android</title>
   <meta name="theme-color" content="#1c1c1c" />
+  <meta name="description" content="卡住的 agent，三秒决定。Collie 安卓应用。" />
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     html, body { margin: 0; min-height: 100%; background: #1c1c1c; color: #f7f7f7; font-family: ui-sans-serif, system-ui, sans-serif; }
-    main { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 32px 20px; }
-    .card { width: 100%; max-width: 420px; }
-    h1 { font-size: 42px; letter-spacing: 0.04em; margin: 0 0 8px; font-weight: 500; }
-    p { color: #a3a3a3; line-height: 1.5; margin: 0 0 12px; }
+    main { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+    .card { width: 100%; max-width: 440px; }
+    h1 { font-size: 40px; letter-spacing: 0.06em; margin: 0 0 8px; font-weight: 500; }
+    p { color: #a3a3a3; line-height: 1.55; margin: 0 0 12px; }
+    .lede { color: #f7f7f7; font-size: 16px; }
     .meta { font-size: 13px; color: #6e6e6e; font-variant-numeric: tabular-nums; }
+    .row { display: flex; gap: 8px; margin-top: 28px; }
     a.btn {
-      display: flex; align-items: center; justify-content: center;
-      height: 52px; margin-top: 28px; border-radius: 2px;
-      background: #e8e8e8; color: #2a2a2a; font-weight: 600; text-decoration: none;
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      height: 48px; border-radius: 2px; font-weight: 600; text-decoration: none; font-size: 14px;
     }
+    a.primary { background: #e8e8e8; color: #2a2a2a; }
+    a.ghost { border: 1px solid #3a3a3a; color: #f7f7f7; }
     .hint { margin-top: 16px; font-size: 12px; color: #6e6e6e; }
     .mark {
-      width: 56px; height: 56px; border-radius: 2px; background: #2a2a2a;
-      display: grid; place-items: center; margin-bottom: 24px; font-weight: 700; font-size: 22px;
+      width: 48px; height: 48px; border-radius: 2px; border: 1px solid #3a3a3a;
+      display: grid; place-items: center; margin-bottom: 28px;
     }
+    .mark svg { width: 32px; height: 32px; }
   </style>
 </head>
 <body>
   <main>
     <div class="card">
-      <div class="mark">C</div>
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9" stroke="#f7f7f7" stroke-width="1.4"/>
+          <circle cx="18" cy="7" r="1.6" fill="#f7f7f7"/>
+          <circle cx="6.5" cy="15" r="1.1" fill="#f7f7f7"/>
+        </svg>
+      </div>
       <h1>Collie</h1>
-      <p>安卓应用。通知栏直接批准卡住的 agent，桌面小组件看牧群。包名 com.collie.app，最低 Android 8。</p>
-      <p class="meta">v1.1.0 · 17 MB · debug 签名</p>
-      <a class="btn" href="/collie.apk" download="collie.apk">下载 APK</a>
-      <p class="hint">安装时允许未知来源。这是 debug 包，用来装到手机上试用。Herd 数据是演示，通知栏批准和小组件是真的。</p>
+      <p class="lede">卡住的 agent，三秒决定。</p>
+      <p>选项在卡片上，通知栏也能批。打开 pane 才是打字和按键。Kotlin · Jetpack Compose · Android 8+。</p>
+      <p class="meta">v1.2.0 · com.collie.app</p>
+      <div class="row">
+        <a class="btn primary" href="/collie.apk" download="collie.apk">下载 APK</a>
+        <a class="btn ghost" href="https://github.com/catoncat/collie-android">源码</a>
+      </div>
+      <p class="hint">侧载时允许未知来源。Herd 是演示数据；通知栏批准和桌面小组件是真的。</p>
     </div>
   </main>
 </body>

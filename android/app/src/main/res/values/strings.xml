@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Collie</string>
+    <string name="widget_herd">牧群概览</string>
+    <string name="channel_ongoing">牧群在线</string>
+    <string name="channel_needs_you">需要你</string>
+    <string name="approve">批准</string>
+    <string name="deny">拒绝</string>
+    <string name="open">打开</string>
+</resources>
