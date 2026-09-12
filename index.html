@@ -4,24 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Collie — Android</title>
-  <meta name="theme-color" content="#070708" />
+  <meta name="theme-color" content="#1c1c1c" />
   <style>
     :root { color-scheme: dark; }
     * { box-sizing: border-box; }
-    html, body { margin: 0; min-height: 100%; background: #070708; color: #f3f3f4; font-family: ui-sans-serif, system-ui, sans-serif; }
+    html, body { margin: 0; min-height: 100%; background: #1c1c1c; color: #f7f7f7; font-family: ui-sans-serif, system-ui, sans-serif; }
     main { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 32px 20px; }
     .card { width: 100%; max-width: 420px; }
-    h1 { font-size: 42px; letter-spacing: -0.04em; margin: 0 0 8px; font-weight: 600; }
-    p { color: #8e8e96; line-height: 1.5; margin: 0 0 12px; }
-    .meta { font-size: 13px; color: #5c5c64; font-variant-numeric: tabular-nums; }
+    h1 { font-size: 42px; letter-spacing: 0.04em; margin: 0 0 8px; font-weight: 500; }
+    p { color: #a3a3a3; line-height: 1.5; margin: 0 0 12px; }
+    .meta { font-size: 13px; color: #6e6e6e; font-variant-numeric: tabular-nums; }
     a.btn {
       display: flex; align-items: center; justify-content: center;
-      height: 52px; margin-top: 28px; border-radius: 12px;
-      background: #d8dae0; color: #0b0b0c; font-weight: 600; text-decoration: none;
+      height: 52px; margin-top: 28px; border-radius: 2px;
+      background: #e8e8e8; color: #2a2a2a; font-weight: 600; text-decoration: none;
     }
-    .hint { margin-top: 16px; font-size: 12px; color: #5c5c64; }
+    .hint { margin-top: 16px; font-size: 12px; color: #6e6e6e; }
     .mark {
-      width: 56px; height: 56px; border-radius: 14px; background: #18181c;
+      width: 56px; height: 56px; border-radius: 2px; background: #2a2a2a;
       display: grid; place-items: center; margin-bottom: 24px; font-weight: 700; font-size: 22px;
     }
   </style>
@@ -31,10 +31,10 @@
     <div class="card">
       <div class="mark">C</div>
       <h1>Collie</h1>
-      <p>安卓应用。系统通知栏批准、桌面小组件、指纹锁。包名 com.collie.app，最低 Android 8。</p>
-      <p class="meta">v1.0.0 · 17 MB · debug 签名</p>
+      <p>安卓应用。通知栏直接批准卡住的 agent，桌面小组件看牧群。包名 com.collie.app，最低 Android 8。</p>
+      <p class="meta">v1.1.0 · 17 MB · debug 签名</p>
       <a class="btn" href="/collie.apk" download="collie.apk">下载 APK</a>
-      <p class="hint">安装时打开「允许未知来源」。debug 包，仅用于安装试用。</p>
+      <p class="hint">安装时允许未知来源。这是 debug 包，用来装到手机上试用。Herd 数据是演示，通知栏批准和小组件是真的。</p>
     </div>
   </main>
 </body>
